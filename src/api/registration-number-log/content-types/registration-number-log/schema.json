@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "registration_number_logs",
+  "info": {
+    "singularName": "registration-number-log",
+    "pluralName": "registration-number-logs",
+    "displayName": "registrationNumberLog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "registrationDate": {
+      "type": "integer",
+      "default": 0
+    },
+    "Users": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "RegistrationNumberLog"
+    }
+  }
+}

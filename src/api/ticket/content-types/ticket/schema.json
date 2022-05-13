@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tickets",
+  "info": {
+    "singularName": "ticket",
+    "pluralName": "tickets",
+    "displayName": "ticket",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "leaveStartDate": {
+      "type": "datetime"
+    },
+    "ticketDescription": {
+      "type": "text"
+    },
+    "ticketStatus": {
+      "type": "boolean",
+      "default": false
+    },
+    "ticket_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::leave-type.leave-type",
+      "inversedBy": "tickets"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "tickets"
+    },
+    "ticketDay": {
+      "type": "integer",
+      "required": true
+    },
+    "leaveEndDate": {
+      "type": "datetime"
+    }
+  }
+}
