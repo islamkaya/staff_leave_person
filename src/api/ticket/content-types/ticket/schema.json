@@ -40,6 +40,18 @@
     },
     "leaveEndDate": {
       "type": "datetime"
+    },
+    "name": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "ticket_names"
+    },
+    "surName": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "ticket_surname"
     }
   }
 }

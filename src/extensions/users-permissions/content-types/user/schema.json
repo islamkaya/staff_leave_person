@@ -88,6 +88,18 @@
     },
     "salary": {
       "type": "float"
+    },
+    "ticket_names": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ticket.ticket",
+      "mappedBy": "name"
+    },
+    "ticket_surname": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ticket.ticket",
+      "mappedBy": "surName"
     }
   }
 }
