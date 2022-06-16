@@ -1,1 +1,3 @@
-# staff_leave_person
+Staff Leave Person
+
+Open Source personal management system.
