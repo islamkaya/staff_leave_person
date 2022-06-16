@@ -1,6 +1,19 @@
 {
     "signin": "Giriş Yap",
     "email": "Email",
-    "password": "Şifre"
-    
+    "password": "Şifre",
+    "brandName": "Personel İzin",
+    "getLeave": "İzin Al",
+    "leaveRequests": "İzin Talepleri",
+    "loginError": "Kullanıcı adı ya da Parola hatalı.",
+    "logOut" : "Çıkış Yap",
+    "leaveForm": "İzin Formu",
+    "name": "Adı",
+    "surName": "Soyadı",
+    "registrationNumber": "Sicil Numarası",
+    "leaveType": "İzin Tipi",
+    "leaveDay": "İzin Günü",
+    "choise": "Seçiniz...",
+    "description" :"Açıklama",
+    "leaveDate" : "İzin Tarihi"
 }

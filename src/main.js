@@ -1,14 +1,13 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import '@/ui/assets/css/bootstrap.css'
-import '@/ui/assets/css/extra.css'
-import '@/config/apiURL.js'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faHatWizard } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { createApp } from "vue";
+import App from "./App.vue";
+import store from "./app/store/store";
+import router from "@/router/index";
+import "@/ui/assets/css/extra.css";
+import "@/config/axios.js"
 
 
-library.add(faHatWizard);
 
-
-createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
+const app = createApp(App);
+app.use(router);
+app.use(store);
+app.mount("#app");
